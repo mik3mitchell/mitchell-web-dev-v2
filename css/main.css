@@ -1,73 +1,415 @@
-/* ==========================================================================
-MITCHELL WEB DEV MAIN STYLESHEET
-========================================================================== */
+@import url("https://use.typekit.net/rua6kda.css");
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
+body {
+  margin: 0; }
 
-/* ==========================================================================
-Table of Contents:
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
 
-1. EXTERNAL RESOURCES
-2. BASE STYLES
-3. MAIN NAVIGATION
-4. BUTTONS
-5. BODY
-6. MOBILE MEDIA QUERIES
-7. ADDITIONAL CUSTOM STYLES
-========================================================================== */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
 
+audio:not([controls]) {
+  display: none;
+  height: 0; }
 
-/* ==========================================================================
-1. EXTERNAL RESOURCES                                            
-========================================================================== */
+[hidden],
+template {
+  display: none; }
 
-/* =============== @import, @font-face, and CSS File Includes =============== */
+a {
+  background-color: transparent; }
 
+a:active,
+a:hover {
+  outline: 0; }
 
+abbr[title] {
+  border-bottom: 1px dotted; }
 
-/* ==========================================================================
-2. BASE STYLES                                             
-========================================================================== */
+b,
+strong {
+  font-weight: bold; }
 
-/* =============== Base =============== */
+dfn {
+  font-style: italic; }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
 
+mark {
+  background: #ff0;
+  color: #000; }
 
-/* =============== Typography =============== */
+small {
+  font-size: 80%; }
 
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
 
+sup {
+  top: -0.5em; }
 
-/* ==========================================================================
-3. MAIN NAVIGATION                                            
-========================================================================== */
+sub {
+  bottom: -0.25em; }
 
+img {
+  border: 0; }
 
+svg:not(:root) {
+  overflow: hidden; }
 
-/* =============== Custom Menu Primary =============== */
+figure {
+  margin: 1em 40px; }
 
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
 
+pre {
+  overflow: auto; }
 
-/* =============== Mobile Toggle Menu =============== */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
 
-/* =============== Fixed Sidebars =============== */
+button {
+  overflow: visible; }
 
+button,
+select {
+  text-transform: none; }
 
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
 
-/* ==========================================================================
-4. BUTTONS                                        
-========================================================================== */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
 
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
-/* ==========================================================================
-5. BODY                                     
-========================================================================== */
+input {
+  line-height: normal; }
 
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
 
-/* ==========================================================================
-6. MOBILE MEDIA QUERIES                                  
-========================================================================== */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
 
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
 
-/* ==========================================================================
-7. ADDITIONAL CUSTOM STYLES                       
-========================================================================== */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+body {
+  background-color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Fira Sans", sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+::selection {
+  background: #FFF498; }
+
+::-moz-selection {
+  background: #FFF498; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #FFF498; }
+
+a {
+  color: #0074D9;
+  text-decoration: none;
+  outline: 0; }
+  a:hover, a:focus {
+    color: #40a6ff; }
+
+.gigantic, .huge, .large, .bigger, .big,
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  font-weight: bold; }
+
+.gigantic {
+  font-size: 110px;
+  line-height: 1.09;
+  letter-spacing: -2px; }
+
+.huge, h1 {
+  font-size: 68px;
+  line-height: 1.05;
+  letter-spacing: -1px; }
+
+.large, h2 {
+  font-size: 42px;
+  line-height: 1.14; }
+
+.bigger, h3 {
+  font-size: 26px;
+  line-height: 1.38; }
+
+.big, h4 {
+  font-size: 22px;
+  line-height: 1.38; }
+
+.small, small {
+  font-size: 10px;
+  line-height: 1.2; }
+
+p {
+  margin: 0 0 20px 0; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .button:hover, .button:active, .button:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  input[type="submit"]:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="reset"]:hover,
+  input[type="reset"]:active,
+  input[type="reset"]:focus,
+  input[type="button"]:hover,
+  input[type="button"]:active,
+  input[type="button"]:focus {
+    color: #333;
+    border-color: #888;
+    outline: 0; }
+
+* *:before, * *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #595959;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.64em;
+  background: #243441;
+  height: 2000px; }
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%; }
+
+header li, header a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  list-style: none; }
+
+header a.cta button {
+  background: none;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #56CCF2;
+  text-decoration: none;
+  list-style: none;
+  padding: 5px 10px;
+  border-color: #56CCF2 !important;
+  border-width: 2px;
+  border-radius: 5px; }
+  header a.cta button:hover {
+    box-shadow: 0 0 15px #2196f3;
+    text-shadow: 0 0 5px #2196f3; }
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px; }
+
+img.logo {
+  display: inline-block;
+  height: 70%;
+  width: auto; }
+
+#sidebar-social {
+  height: 80%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right: 100px; }
+  #sidebar-social ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute; }
+  #sidebar-social ul li {
+    list-style: none;
+    margin: 15px 0; }
+  #sidebar-social ul a {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 50px;
+    background: #E0E5EC;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #243441;
+    transition: 0.5s; }
+
+.i-big {
+  font-size: 30px !important;
+  line-height: 46px; }
+
+#sidebar-social ul li a:hover {
+  color: #2196f3;
+  box-shadow: 0 0 15px #2196f3;
+  text-shadow: 0 0 5px #2196f3; }
+
+.div1 {
+  height: 500px;
+  width: 100%;
+  background: blue; }
+
+.slant-bottom {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+
+.slant-top {
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%); }
+
+.slant-top-bottom {
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); }
+
+/*# sourceMappingURL=main.css.map */
